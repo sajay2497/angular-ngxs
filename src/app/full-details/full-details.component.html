@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mt-5">
+            <div *ngIf="!loding">
+               <strong>Loading...</strong> 
+              </div>
+            <div class="card" *ngIf="loding">
+                <div class="card-body">
+                  <h5 class="card-title"><b>{{userdata?.title}}</b></h5>
+                  Body: {{userdata?.body}}
+                  <br><br>
+                  <a routerLink="/" class="btn btn-primary">Home</a>
+
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
